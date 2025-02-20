@@ -1,5 +1,4 @@
-📚 Material de Aula - HTML, CSS e JavaScript
 
-Aqui você encontra o material de apoio para as aulas de HTML, CSS e JavaScript voltadas para iniciantes em programação. O repositório contém exercícios, exemplos e recursos utilizados nas aulas para facilitar o aprendizado e apoiar o desenvolvimento de habilidades em front-end. 🚀
+📚 Repositório de Aulas
 
-Fique à vontade para explorar e praticar! 😊
+Este repositório contém os materiais de todas as minhas aulas, abordando temas diversos de programação. Aqui você encontrará conteúdos, exemplos de código, exercícios práticos e recursos adicionais para apoiar seu aprendizado. O foco é proporcionar uma base sólida e prática para quem está começando ou se aprofundando no mundo da tecnologia. 🚀 😊
