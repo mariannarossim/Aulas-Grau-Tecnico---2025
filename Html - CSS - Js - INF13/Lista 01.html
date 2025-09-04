@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jornal da Inovação da Escola</title>
+  <meta name="description" content="Página destinada a novidades e inovações na escola" />
+  <meta name="keywords" content="inovação, escola, novidades, tecnologia, educação" />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 20px; line-height: 1.5; }
+    header, section { margin-bottom: 24px; }
+    nav a { margin-right: 12px; }
+
+    /* Letreiro (slide) */
+    .marquee-wrap { overflow: hidden; width: 100%; border: 1px solid #ccc; padding: 8px; box-sizing: border-box; }
+    .marquee { display: inline-block; white-space: nowrap; font-weight: bold; font-size: 1.25rem; padding: 4px 10px; }
+
+    /* Controle do movimento (esquerda -> direita -> volta) */
+    @keyframes slide-lr {
+      0%   { transform: translateX(-100%); }
+      50%  { transform: translateX(0%); }
+      100% { transform: translateX(100%); }
+    }
+    .marquee-anim {
+      animation-name: slide-lr;
+      animation-duration: 6s;       /* velocidade do deslize */
+      animation-timing-function: linear;
+      animation-iteration-count: 3; /* repetir 3 vezes */
+      animation-direction: normal;  /* irá da esquerda para a direita, no 2º ciclo (se houver) volta */
+      display: inline-block;
+    }
+
+    /* Controle de largura/altura/alinhamento/exemplo */
+    .marquee-wrap.small { height: 40px; }
+    .marquee-wrap.center { text-align: center; }
+
+    /* Formatação de exemplo para listas e destaque */
+    .books, .study-songs { margin-left: 20px; }
+
+    /* Pequeno estilo para exemplos de formatação */
+    .format-sample { background: #f9f9f9; padding: 8px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+
+  <!-- 1. Estrutura básica -->
+  <header>
+    <h1>Título</h1>
+    <h2>Subtítulo H2</h2>
+    <h3>Subtítulo H3</h3>
+    <h4>Subtítulo H4</h4>
+    <h5>Subtítulo H5</h5>
+    <h6>Subtítulo H6</h6>
+  </header>
+
+  <!-- 2. Formatação de texto: poema (ATENÇÃO: poema de Carlos Drummond de Andrade não foi reproduzido por questões de direitos autorais) -->
+  <section>
+    <h2>Poema: AUSÊNCIA (placeholder)</h2>
+    <p>Nota: por motivos de direitos autorais não posso reproduzir integralmente o poema <em>AUSÊNCIA</em> de Carlos Drummond de Andrade. Abaixo deixei um local para você colar o poema e um resumo curto.</p>
+    <p class="format-sample">
+      <!-- Aqui insira o poema/copiar e colar -->
+      &lt;!-- COLE O POEMA AQUI (USE &lt;h1&gt; e &lt;br /&gt; conforme solicitado) --&gt;
+    </p>
+    <h3>Resumo breve do poema</h3>
+    <p>O poema trata da sensação de perda e distância, explorando imagens do cotidiano e do coração em silêncio.</p>
+  </section>
+
+  <!-- 3. Letra de música: escrevi uma letra original curta para não violar direitos autorais -->
+  <section>
+    <h2>Letra de música (exemplo original)</h2>
+    <h1>Canção da Sala</h1>
+    <p>
+      No corredor a luz ficou, <br />
+      A lousa guarda o rastro do nosso amor. <br />
+      Volta a caneta, escreve o coração, <br />
+      Cada verso é uma nova lição. <br />
+    </p>
+  </section>
+
+  <!-- 4. Página com meta tags e links (já definidas no <head>) -->
+  <section>
+    <h1>10 escolas que estão transformando suas realidades</h1>
+    <p><strong>Fonte:</strong> Jornal da Educação (exemplo de citação).</p>
+    <p>
+      Várias instituições têm implementado práticas inovadoras como laboratórios maker, ensino híbrido e parcerias com universidades. Essas iniciativas têm impactado o desempenho dos estudantes e ampliado oportunidades. Acompanhe abaixo algumas escolas e projetos em destaque.
+    </p>
+    <h2>Casos em destaque</h2>
+    <p>Veja matérias completas e recursos:</p>
+    <nav>
+      <a href="https://www.exemplo.com/noticia1" target="_blank" rel="noopener">Matéria 1 - Laboratórios Maker</a>
+      <a href="https://www.exemplo.com/noticia2" target="_blank" rel="noopener">Matéria 2 - Ensino Híbrido</a>
+    </nav>
+  </section>
+
+  <!-- 5. Listas HTML -->
+  <section>
+    <h2>Listas</h2>
+    <h3>Livros (lista não ordenada)</h3>
+    <ul class="books">
+      <li>O Pequeno Príncipe — Antoine de Saint-Exupéry</li>
+      <li>1984 — George Orwell</li>
+      <li>Como Fazer Amigos e Influenciar Pessoas — Dale Carnegie</li>
+    </ul>
+
+    <h3>Músicas para estudar (lista ordenada)</h3>
+    <ol class="study-songs">
+      <li>Clássico instrumental — Playlist Estudo 1</li>
+      <li>Música ambiente sem vocal — Playlist Estudo 2</li>
+      <li>Trilha sonora calma — Playlist Estudo 3</li>
+    </ol>
+  </section>
+
+  <!-- 6. Formatação de texto com outras tags -->
+  <section>
+    <h2>Formatação de texto (exemplos)</h2>
+    <p class="format-sample">
+      <b>Negrito</b>, <u>Sublinhado</u>, <i>Itálico</i>, <sup>Superscrito</sup>, <sub>Subscrito</sub>, <big>Texto maior</big>, <small>Texto menor</small>
+    </p>
+  </section>
+
+  <!-- 7. Letreiro deslizante -->
+  <section>
+    <h2>Letreiro deslizante (esquerda → direita → volta, 3 repetições)</h2>
+    <div class="marquee-wrap small center" aria-label="Letreiro deslizante">
+      <!-- Ajuste a velocidade mudando animation-duration na classe .marquee-anim -->
+      <div class="marquee marquee-anim">📢 Olá! Esta é uma mensagem deslizante — Movimento repetido 3 vezes.</div>
+    </div>
+    <p>Controle de parâmetros: largura da .marquee-wrap, altura (.small), espaçamento (padding) e velocidade (animation-duration).</p>
+  </section>
+
+  <footer>
+    <p>Arquivo de exemplo para a Lista 01 – HTML. Professor(a): ________</p>
+  </footer>
+
+</body>
+</html>
